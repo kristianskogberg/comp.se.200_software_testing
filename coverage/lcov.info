@@ -52,9 +52,8 @@ DA:18,1
 LF:18
 LH:18
 BRDA:1,0,0,1
-BRDA:16,1,0,1
-BRF:2
-BRH:2
+BRF:1
+BRH:1
 end_of_record
 TN:
 SF:src\eq.js
