@@ -1,0 +1,16 @@
+{
+  "include": [
+    "src/add.js",
+    "src/divide.js",
+    "src/eq.js",
+    "src/filter.js",
+    "src/get.js",
+    "src/isArrayLike.js",
+    "src/isArrayLikeObject.js",
+    "src/isBoolean.js",
+    "src/toNumber.js",
+    "src/toString.js"
+  ],
+  "reporter": ["lcov", "text"],
+  "all": true
+}

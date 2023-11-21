@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">54.54% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>18/33</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/12</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">54.54% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>18/33</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -96,46 +96,46 @@
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import isSymbol from '../isSymbol.js'
 &nbsp;
 /** Used as references for various `Number` constants. */
-const INFINITY = 1 / 0
+const INFINITY = <span class="cstat-no" title="statement not covered" >1 / 0</span>
 &nbsp;
 /** Used to convert symbols to primitives and strings. */
-const symbolToString = Symbol.prototype.toString
+const symbolToString = <span class="cstat-no" title="statement not covered" >Symbol.prototype.toString</span>
 &nbsp;
 /**
  * The base implementation of `toString` which doesn't convert nullish
@@ -145,21 +145,21 @@ const symbolToString = Symbol.prototype.toString
  * @param {*} value The value to process.
  * @returns {string} Returns the string.
  */
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function baseToString(value) {</span></span>
-<span class="cstat-no" title="statement not covered" >  // Exit early for strings to avoid a performance hit in some environments.</span>
+function <span class="fstat-no" title="function not covered" >baseToString(</span>value) {
+  // Exit early for strings to avoid a performance hit in some environments.
 <span class="cstat-no" title="statement not covered" >  if (typeof value === 'string') {</span>
 <span class="cstat-no" title="statement not covered" >    return value</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  }
 <span class="cstat-no" title="statement not covered" >  if (Array.isArray(value)) {</span>
-<span class="cstat-no" title="statement not covered" >    // Recursively convert values (susceptible to call stack limits).</span>
+    // Recursively convert values (susceptible to call stack limits).
 <span class="cstat-no" title="statement not covered" >    return `${value.map(baseToString)}`</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  }
 <span class="cstat-no" title="statement not covered" >  if (isSymbol(value)) {</span>
 <span class="cstat-no" title="statement not covered" >    return symbolToString ? symbolToString.call(value) : ''</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >  const result = `${value}`</span>
+  }
+  const result = <span class="cstat-no" title="statement not covered" >`${value}`</span>
 <span class="cstat-no" title="statement not covered" >  return (result == '0' &amp;&amp; (1 / value) == -INFINITY) ? '-0' : result</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+}
 &nbsp;
 export default baseToString
 &nbsp;</pre></td></tr></table></pre>
@@ -169,7 +169,7 @@ export default baseToString
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-11-21T17:10:31.590Z
+                at 2023-11-21T17:35:30.568Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
