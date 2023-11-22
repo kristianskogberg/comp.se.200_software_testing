@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "coverage": "c8 --reporter=lcov mocha && cat ./coverage/lcov.info | coveralls",
+    "coverage": "c8 mocha && cat ./coverage/lcov.info | coveralls",
     "coverage-windows": "c8 mocha"
   },
   "author": "",
