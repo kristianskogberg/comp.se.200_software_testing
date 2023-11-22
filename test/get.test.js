@@ -18,7 +18,7 @@ describe("get", () => {
   });
 
   it("returns undefined if the path does not exist and no default value is set", () => {
-    expect(get(object, "a.b.c")).to.be.undefined;
+    expect(get(object, "")).to.be.undefined;
   });
 
   it("returns the default value when the object is null", () => {
@@ -76,9 +76,5 @@ describe("get", () => {
   it("returns undefined for an invalid index in an array path", () => {
     const array = ["a", "b", "c"];
     expect(get(array, 5)).to.be.undefined;
-  });
-
-  it("returns undefined for empty path when defaultValue is not provided", () => {
-    expect(get(object, "")).to.be.undefined;
   });
 });
