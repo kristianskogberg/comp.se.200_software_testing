@@ -32,9 +32,7 @@ jobs:
         run: npm ci
 
       - name: Run unit tests
-        if: always()
         run: npm test
 
       - name: Run coverage
-        if: always()
         run: npm run coverage
