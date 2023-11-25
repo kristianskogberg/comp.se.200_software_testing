@@ -31,6 +31,8 @@ describe("add", () => {
     expect(add(6, {})).to.be.NaN;
   });
 
+  // REST ARE FAILING TESTS
+
   it("converts string arguments to numbers before addition", () => {
     expect(add("6", "4")).to.equal(10);
   });
