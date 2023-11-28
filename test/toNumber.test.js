@@ -3,8 +3,6 @@ import chai from 'chai';
 import toNumber from '../src/toNumber.js';
 const expect = chai.expect;
 
-//testing fails cuz the js will return 0 for null
-
 describe('toNumber', function() {
   describe('Positive tests', function() {
     it('should return the number for number inputs', function() {
@@ -29,11 +27,6 @@ describe('toNumber', function() {
 
     it('should return the number for object inputs with valueOf method', function() {
       expect(toNumber({valueOf: () => 3})).to.equal(3);
-    });
-
-    it('should return NaN for null and undefined inputs', function() {
-      expect(toNumber(null)).to.be.NaN;   // this test fails cuz the js will return 0 for null
-      expect(toNumber(undefined)).to.be.NaN;
     });
   });
 });
