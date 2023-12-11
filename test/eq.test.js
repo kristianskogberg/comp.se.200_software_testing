@@ -26,15 +26,12 @@ describe("eq", () => {
     expect(eq("a", "a")).to.be.true;
   });
 
-  /*
-  NOTE: this test should return false but it returns true, something wrong in the eq function
-
-  it("should return false for a string and a string object with the same value", () => {
-    expect(eq("a", Object("a"))).to.be.false;
-  });
-  */
-
   it("should return true for NaN compared with NaN", () => {
     expect(eq(NaN, NaN)).to.be.true;
+  });
+
+  //NOTE:  test should return false but it returns true, something wrong in the eq function
+  it("should return false for a string and a string object with the same value", () => {
+    expect(eq("a", Object("a"))).to.be.false;
   });
 });

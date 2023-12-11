@@ -12,6 +12,8 @@ describe("filter", function () {
     expect(result).to.deep.equal([15, 20]);
   });
 
+  // REST ARE FAILING TESTS
+
   it("should return an empty array when input is empty", function () {
     expect(filter([], (value) => value)).to.deep.equal([]);
   });
