@@ -10,6 +10,7 @@ describe("toString", function () {
   it("should return the string for number inputs", function () {
     expect(toString(123)).to.equal("123");
     expect(toString(-0)).to.equal("-0");
+    expect(toString(0)).to.equal("0");
   });
 
   it("should return the string for array inputs", function () {
@@ -20,6 +21,7 @@ describe("toString", function () {
     const symbol = Symbol("symbol");
     expect(toString(symbol)).to.equal(symbol.toString());
   });
+
   it("should correctly convert arrays with various elements", function () {
     const array = [1, "a", null, undefined, [2, "b", null], -0];
     const expectedString = "1,a,,,[2,b,],-0";
