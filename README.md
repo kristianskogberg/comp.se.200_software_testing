@@ -10,7 +10,7 @@ This repository contains automated testing workflow consisting of Github Actions
 
 ## Code coverage status
 
-Below is a badge from Coveralls which displays the current code coverage status.
+The coverage reports are generated using the `c8` library and `coveralls`. Please see the badge below for the current code coverage status from Coveralls (clicking it will open the Coveralls report).
 
 [![Coverage Status](https://coveralls.io/repos/github/kristianskogberg/comp.se.200_software_testing/badge.svg?branch=main)](https://coveralls.io/github/kristianskogberg/comp.se.200_software_testing?branch=main)
 
@@ -48,4 +48,4 @@ To run the unit tests and get code coverage, run the following commands in the r
 
 1. `npm install` to install all dependencies
 2. `npm test` to perform the unit tests
-3. For linux: `npm run coverage`, for Windows: `npm run coverage-windows` to calculate the code coverage
+3. `npm run coverage` to calculate the code coverage
