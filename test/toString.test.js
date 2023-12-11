@@ -22,6 +22,14 @@ describe("toString", function () {
     expect(toString(symbol)).to.equal(symbol.toString());
   });
 
+  it("should return an empty string for an empty string input", function () {
+    expect(toString("")).to.equal("");
+  });
+
+  it("should return an empty string for null input", function () {
+    expect(toString(null)).to.equal("");
+  });
+
   it("should correctly convert arrays with various elements", function () {
     const array = [1, "a", null, undefined, [2, "b", null], -0];
     const expectedString = "1,a,,,[2,b,],-0";
